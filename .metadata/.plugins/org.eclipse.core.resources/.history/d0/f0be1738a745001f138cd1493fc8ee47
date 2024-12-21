@@ -1,0 +1,20 @@
+package practice;
+
+public class Datahiding {
+private int bal=2400;
+private String name="Rahul";
+public int getBal() {
+	return bal;
+}
+public void setBal(int bal) {
+	this.bal = bal;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+
+
+}

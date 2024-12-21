@@ -1,0 +1,15 @@
+package practice;
+
+class InBl{
+	int count=0;
+	{
+		count++;
+	}
+}
+public class InstancBlck {
+	public static void main(String[] args) {
+		
+		
+		System.out.println("Object Count: "+count);
+	}
+}

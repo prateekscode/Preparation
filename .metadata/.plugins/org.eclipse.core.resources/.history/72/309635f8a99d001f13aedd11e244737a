@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<%@ page import="java.util.*,com.india.bookstore.util.*" %>
+<html>
+<body><center>
+<br><br><h1>Best BookStore</h1>
+<form action="/booksearch.jlc"></form>
+<table>
+<tr><td>welcome to BookStore &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Logout</td></tr>
+<tr><td>Select Category<input type="text" name="cat"/><input type="submit" value="Show"></td></tr>
+<tr><td>
+<%
+Object obj1=request.getAttribute("MSG");
+if(obj1!=null){
+	out.println("<h1>"+obj1);
+}
+Object obj2=request.getAttribute("BOOKS");
+if(obj2!=null){
+	List books=(List)obj2;
+	out.println("<table>");
+}
+%>
+<tr>
+<td>Book Id</td>
+<td>Book Name</td>
+<td>Author</td>
+<td>Cost</td>
+<td>Cat</td>
+<td>Pub</td>
+<td>ISBN</td>
+</tr>
+
+<%
+Iterator it=books.iterator();
+while(it.hasNext())
+	Book book=(Book)it.next();
+%>
+</table>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<taglib>
+<!-- both of two tags are mandatory tlib-ver and jsp-vers -->
+ <tlib-version>1.0</tlib-version>
+ <jsp-version>2.1</jsp-version>
+<tag>
+	<name>mytag</name>
+	<tag-class>tags.TagHandler</tag-class>
+</tag>
+<tag>
+	<name>printTable</name>
+	<tag-class>tags.PrintTableTag</tag-class>
+	<attribute>
+		<name>number</name>
+		<required>true</required>
+	</attribute>
+		<attribute>
+		<name>color</name>
+		<required>true</required>
+	</attribute>
+</tag>
+</taglib>

@@ -1,0 +1,26 @@
+package com.array.gfg;
+
+public class MovZeoesToEnd {
+
+	public static void swap(int[] A, int a, int b) {
+		int temp = A[a];
+		A[a] = A[b];
+		A[b] = temp;
+	}
+
+	public static void main(String[] args) {
+		int[] ar = { 23, 4, 0, 5, 6, 0, 7, 0, 6, 0, 2, 9 };
+
+		int n = ar.length;
+		int j = 0;
+		for (int i = 0; i < n; i++) {
+			if (ar[i] != 0) {
+				swap(ar, j, i);
+				j++;
+			}
+		}
+		for (int i = 0; i < n; i++) {
+			System.out.println(ar[i] + " ");
+		}
+	}
+}

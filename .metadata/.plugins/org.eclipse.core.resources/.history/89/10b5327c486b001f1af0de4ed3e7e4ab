@@ -1,0 +1,9 @@
+package com.array.gfg;
+
+public class SearchElement {
+	int search;
+	
+	public static void main(String[] args) {
+	
+}
+}

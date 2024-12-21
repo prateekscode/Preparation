@@ -1,0 +1,19 @@
+package cam.array;
+
+public class Arr1 {
+	public static void main(String[] args) {
+		int ar[]= {10,30,4,56,78,90};
+		
+		for(int i=0;i<ar.length;i++)
+			System.out.println("The value at "+i+" index is "+ar[i]);
+	
+		int size=3;
+		int ar1[]=new int[size];
+		ar1[0]=20;
+		ar1[1]=30;
+		ar1[2]=40;
+		
+		for(int x:ar1)
+			System.out.println(x);
+	}
+}

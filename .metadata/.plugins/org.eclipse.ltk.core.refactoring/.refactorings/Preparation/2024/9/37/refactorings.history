@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Largest3DistinctElements.java&apos; to &apos;Preparation/src/com.array.gfg&apos;&#x0D;&#x0A;- Original project: &apos;Preparation&apos;&#x0D;&#x0A;- Destination element: &apos;Preparation/src/com.array.gfg&apos;&#x0D;&#x0A;- Original element: &apos;com.array.gfg.Largest3DistinctElements.java&apos;" description="Copy compilation unit" destination="/src&lt;com.array.gfg" element1="/src&lt;com.array.gfg{Largest3DistinctElements.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1726292093756" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,22 @@
+package com.lib.book.shop.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class RegisterAction {
+	public String registerStudent(HttpServletRequest req,HttpServletResponse res) {
+		boolean isError=false;
+		String page="registerDef.jsp";
+		String fname=req.getParameter("fname");
+		String mname=req.getParameter("mname");
+		String lname=req.getParameter("lname");
+		String email=req.getParameter("email");
+		String phone=req.getParameter("phone");
+		String gender=req.getParameter("gender");
+		String username=req.getParameter("uname");
+		String password=req.getParameter("pass");
+		
+		if(!)
+		
+	}
+}

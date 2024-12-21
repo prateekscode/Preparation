@@ -1,0 +1,7 @@
+package com.lib.book.shop.to;
+
+import java.io.Serializable;
+
+public class UserTo implements Serializable{
+	
+}

@@ -1,0 +1,26 @@
+package com.array.gfg;
+
+public class SortingArray {
+public static void main(String[] args) {
+	int ar[]= {9,4,5,3,2,6,1};
+	
+	System.out.println("Befor Sorting:");
+	for(int i=0;i<ar.length;i++)
+		System.out.print(ar[i]+" ");
+	
+	int temp=0;
+	for(int i=0;i<ar.length;i++) {
+		for(int j=i+1;j<ar.length;j++) {
+			if(ar[j]<ar[i]) {
+				temp=ar[i];
+				ar[i]=ar[j];
+				ar[j]=temp;
+			}
+		}
+	}
+	System.out.println();
+	System.out.println("After sorting:");
+	for(int i=0;i<ar.length;i++)
+		System.out.print(ar[i]+" ");
+}
+}

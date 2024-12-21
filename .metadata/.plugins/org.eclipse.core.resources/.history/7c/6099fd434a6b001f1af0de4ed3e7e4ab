@@ -1,0 +1,13 @@
+package com.array.gfg;
+
+public class Largest3DistinctElements {
+	public static void main(String[] args) {
+		int[] ar = { 20, 50, 10, 7, 90 };
+		int i,f,s,t;
+		
+		if(ar.length<3)
+			System.out.println("invalid input");
+		
+		System.out.println(Integer.MIN_VALUE);
+	}
+}

@@ -1,0 +1,11 @@
+package com.recursion;
+
+public class PrintIncreasing {
+	public static void main(String[] args) {
+		
+	}
+	
+	public static void printDecr(int n) {
+		printDecr(n-1);
+	}
+}

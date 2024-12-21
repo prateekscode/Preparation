@@ -1,0 +1,28 @@
+package practice;
+import java.util.Scanner;
+public class Datahiding {
+
+	private int bal = 2400;
+	private String name = "Rahul";
+	Scanner sc=new Scanner();
+	
+	public int getBal() {
+		return bal;
+	}
+
+	public void setBal(int bal) {
+		System.out.println("Enter password");
+		int pass=sc.nextInt();
+		if()
+		this.bal = bal;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+}

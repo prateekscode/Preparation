@@ -1,0 +1,8 @@
+package practice;
+
+public class DataHidMain {
+	public static void main(String[] args) {
+		Datahiding d=new Datahiding();
+		d.getName();
+	}
+}

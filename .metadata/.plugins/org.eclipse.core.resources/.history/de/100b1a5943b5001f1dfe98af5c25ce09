@@ -1,0 +1,72 @@
+package com.lib.book.shop.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.jlc.book.shop.validator.LibDataValidtor;
+
+public class RegisterAction {
+	public String registerStudent(HttpServletRequest req, HttpServletResponse res) {
+		boolean isError = false;
+		String page = "registerDef.jsp";
+		String fname = req.getParameter("fname");
+		String mname = req.getParameter("mname");
+		String lname = req.getParameter("lname");
+		String email = req.getParameter("email");
+		String phone = req.getParameter("phone");
+		String gender = req.getParameter("gender");
+		String username = req.getParameter("uname");
+		String password = req.getParameter("pass");
+
+		// Validated first name
+		if (!LibDataValidtor.validateRequired(fname)) {
+			req.setAttribute("fname", "First name is required");
+			isError = true;
+		} else if (!LibDataValidtor.validateFirstCharacterAsUpper(fname)) {
+			req.setAttribute("fname", "First name must starts with capital letter");
+			isError = true;
+		} else if (!LibDataValidtor.minLength(fname, 3)) {
+			req.setAttribute("fname", "First name must be minimum 3 character");
+			isError = true;
+		} else if (!LibDataValidtor.maxLength(fname, 10)) {
+			req.setAttribute("fname", "First name must be maximum 10 character");
+			isError = true;
+		} else if (!LibDataValidtor.validateName(fname)) {
+			req.setAttribute("fname", "First name must be only character");
+			isError = true;
+		}
+
+		// Validated middle name
+		if (mname != null && mname.length() > 0) {
+			if (!LibDataValidtor.validateFirstCharacterAsUpper(mname)) {
+				req.setAttribute("mname", "Middle name must starts with capital letter");
+				isError = true;
+			} else if (!LibDataValidtor.minLength(mname, 1)) {
+				req.setAttribute("mname", "Middle name must be minimum 1 character");
+				isError = true;
+			} else if (!LibDataValidtor.maxLength(mname, 10)) {
+				req.setAttribute("mname", "Middle name must be maximum 10 character");
+				isError = true;
+			} else if (!LibDataValidtor.validateName(mname)) {
+				req.setAttribute("mname", "Middle name must be only character");
+				isError = true;
+			}
+		}
+			// Validated Last Name
+			if (mname != null && mname.length() > 0) {
+				if (!LibDataValidtor.validateFirstCharacterAsUpper(mname)) {
+					req.setAttribute("mname", "Middle name must starts with capital letter");
+					isError = true;
+				} else if (!LibDataValidtor.minLength(mname, 1)) {
+					req.setAttribute("mname", "Middle name must be minimum 1 character");
+					isError = true;
+				} else if (!LibDataValidtor.maxLength(mname, 10)) {
+					req.setAttribute("mname", "Middle name must be maximum 10 character");
+					isError = true;
+				} else if (!LibDataValidtor.validateName(mname)) {
+					req.setAttribute("mname", "Middle name must be only character");
+					isError = true;
+				}
+			}
+	}
+}

@@ -1,0 +1,11 @@
+127.0.0.1 - - [29/Nov/2024:21:22:37 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:22:42 +0530] "GET /Online_BookStore/ HTTP/1.1" 404 772
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:22:42 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:22:57 +0530] "GET /Online_BookStore/addBook.jsp HTTP/1.1" 500 2429
+127.0.0.1 - - [29/Nov/2024:21:24:47 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:28:14 +0530] "GET /Online_BookStore/allOrders.jsp HTTP/1.1" 500 3049
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:28:53 +0530] "GET /Online_BookStore/allOrders.jsp HTTP/1.1" 200 598
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:28:53 +0530] "GET /Online_BookStore/css HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:29:17 +0530] "GET /Online_BookStore/allOrders.jsp HTTP/1.1" 500 3049
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:29:23 +0530] "GET /Online_BookStore/addBook.jsp HTTP/1.1" 500 2702
+0:0:0:0:0:0:0:1 - - [29/Nov/2024:21:29:37 +0530] "GET /Online_BookStore/addBook.jsp HTTP/1.1" 500 2702

@@ -1,0 +1,11 @@
+package com.lib.book.shop.factory;
+
+import com.lib.book.shop.dao.UserDao;
+
+public class DAOFactory {
+private static UserDao userDao=null;
+	
+static {
+	
+}
+}

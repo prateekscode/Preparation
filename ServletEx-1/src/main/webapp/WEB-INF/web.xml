@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <context-param>
+  <param-name>State</param-name>
+  <param-value>UP</param-value>
+  </context-param>
+  <context-param>
+  <param-name>Country</param-name>
+  <param-value>INDIA</param-value>
+  </context-param>
+  
+  <servlet>
+  <servlet-name>test</servlet-name>
+  <servlet-class>com.india.servlets.TestServlet</servlet-class>
+  
+  <init-param>
+  <param-name>Email</param-name>
+  <param-value>prateekgupta2002@gmail.com</param-value>
+  </init-param>
+  
+  <init-param>
+  <param-name>Phone</param-name>
+  <param-value>7347861386</param-value>
+  </init-param>
+  
+  <load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>test</servlet-name>
+  <url-pattern>/test.jlc</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+  <welcome-file>test.html</welcome-file>
+  </welcome-file-list>
+</web-app>
