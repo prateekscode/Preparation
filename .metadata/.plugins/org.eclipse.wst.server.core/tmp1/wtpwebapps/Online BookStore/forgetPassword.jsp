@@ -1,26 +1,26 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@taglib prefix="jlc" uri="/WEB-INF/tlds/jlcindia.tld"%>
+<%@taglib prefix="lib" uri="/WEB-INF/tlds/Libindia.tld"%>
 <%@taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <link rel="stylesheet" type="text/css"
-	href="<%=request.getContextPath()%>/css/jlcindia.css">
+	href="<%=request.getContextPath()%>/css/libindia.css">
 <link rel="stylesheet" type="text/css"
 	href="<%=request.getContextPath()%>/css/main.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
 	<center>
-		<form action="forgetPassword.jlc" method="post">
+		<form action="forgetPassword.lib" method="post">
 			<table class="textStyle">
 				<tr>
 					<td align="center" colspan="3"><font size="7"><b>Retrieve
 								Your Password</b></font></td>
 				</tr>
 				<tr>
-					<td align="center" colspan="3"><font size="4" color="red"><b><jlc:error
+					<td align="center" colspan="3"><font size="4" color="red"><b><lib:error
 									property="forgetPasswordError" /></b></font></td>
 				</tr>
 				<tr>
@@ -32,7 +32,7 @@
 						<td><input type="text" size="35"
 							style="color: black; background-color: #b4e0d2; font-size: 20"
 							name="uname"></td>
-						<td><font size="4" color="red"><b><jlc:error
+						<td><font size="4" color="red"><b><lib:error
 										property="uname" /></b></font></td>
 					</tr>
 					<tr>
@@ -42,8 +42,8 @@
 						<td align="center"><font size="5"><b>Email</b></font></td>
 						<td><input type="text" size="35"
 							style="color: black; background-color: #b4e0d2; font-size: 20"
-							;name="email"></td>
-						<td><font size="4" color="red"><b><jlc:error
+							name="email"></td>
+						<td><font size="4" color="red"><b><lib:error
 										property="email" /></b></font></td>
 					</tr>
 					<tr>
@@ -53,7 +53,7 @@
 					</tr>
 					<tr>
 						<td align="center" colspan="3"><br /> <font size="5"
-							color="red"><b>New User</b></font>&nbsp<a href="registerDef.jsp">
+							color="red"><b>New User</b></font>&nbsp;<b><a href="registerDef.jsp">
 								<font size="5">SignUp Here</font>
 						</a></b></td>
 					</tr>
@@ -61,12 +61,12 @@
 				<core:if test="${PASSWORD ne null }">
 					<tr>
 						<td align="center" colspan="3"><br /> <font size="5"
-							color="green">Your Password is</font> <font size="6" color="red">${PASSWORD}</font>
+							color="green">Your Password is</font> <b><font size="6" color="red">${PASSWORD}</font>
 							</b></td>
 					</tr>
 				</core:if>
 				<tr>
-					<td align="center" colspan="3"><b> <font size="5"><b>Login</b></font>&nbsp<a
+					<td align="center" colspan="3"><b> <font size="5"><b>Login</b></font>&nbsp;<a
 							href="index.jsp"> <font size="5">Click Here</font></a>
 					</b></td>
 				</tr>

@@ -20,7 +20,7 @@ public class JDBCUtil {
 
 	public static Connection getConnection() {
 		try {
-			DriverManager.getConnection("jdbc:mysql://localhost/bookshopdb", "root", "prateek");
+			con=DriverManager.getConnection("jdbc:mysql://localhost/bookshopdb", "root", "prateek");
 		} catch (Exception e) {
 			log.error("Error in establishing Connection\n", e);
 		}

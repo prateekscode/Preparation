@@ -11,6 +11,15 @@ import org.apache.log4j.Logger;
 public class ErrorTag extends TagSupport {
 	private String property;
 	Logger log = Logger.getLogger(this.getClass());
+	
+	public String getProperty() {
+		return property;
+	}
+
+	public void setProperty(String property) {
+		this.property = property;
+	}
+
 
 	public int doendTag() throws JspException {
 		try {

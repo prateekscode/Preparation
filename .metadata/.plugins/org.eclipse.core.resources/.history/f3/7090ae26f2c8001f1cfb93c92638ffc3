@@ -1,0 +1,9 @@
+package com.java8;
+
+interface interf{
+	M1();
+	
+}
+public class InterfDefaStati {
+
+}

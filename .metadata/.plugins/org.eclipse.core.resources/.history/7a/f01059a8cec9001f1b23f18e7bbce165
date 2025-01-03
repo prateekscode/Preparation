@@ -1,0 +1,11 @@
+package com.lib.book.shop.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class AllOrdersAction {
+public String getAllOrders(HttpServletRequest req, HttpServletResponse res) {
+	String page="allOrdersDef.jsp";
+	return page;
+}
+}

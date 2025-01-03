@@ -1,0 +1,48 @@
+package com.lib.book.shop.action;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.lib.book.shop.validator.LibDataValidtor;
+
+public class AddBookAction {
+public String addBookInfo(HttpServletRequest req, HttpServletResponse resp) {
+	String page="addBookDef.jsp";
+	String bnm=req.getParameter("bname");
+	String author=req.getParameter("author");
+	String cost=req.getParameter("cost");
+	String pub=req.getParameter("publication");
+	String edi=req.getParameter("edition");
+	float bcost=0.0f;
+	boolean convertCost=true;
+	boolean intractWithDB=true;
+	
+	// Validated book name
+	if (!LibDataValidtor.validateRequired(bnm)) {
+		req.setAttribute("bname", "Book name is required");
+		intractWithDB = false;
+	} else if (!LibDataValidtor.minLength(bnm, 3)) {
+		req.setAttribute("bname", "Book name must be minimum 3 character");
+		intractWithDB = false;
+	} else if (!LibDataValidtor.maxLength(bnm, 60)) {
+		req.setAttribute("bname", "Book name must be maximum 60 character");
+		intractWithDB = false;
+	} 
+	
+	// Validated author name
+	if (!LibDataValidtor.validateRequired(author)) {
+		req.setAttribute("author", "Author name is required");
+		intractWithDB = false;
+	} else if (!LibDataValidtor.minLength(author, 1)) {
+			req.setAttribute("author", "Author name must be minimum 1 character");
+			intractWithDB = true;
+		} else if (!LibDataValidtor.maxLength(mname, 10)) {
+			req.setAttribute("mname", "Middle name must be maximum 10 character");
+			intractWithDB = true;
+		} else if (!LibDataValidtor.validateName(mname)) {
+			req.setAttribute("mname", "Middle name must be only character");
+			intractWithDB = true;
+		}
+	}
+
+}

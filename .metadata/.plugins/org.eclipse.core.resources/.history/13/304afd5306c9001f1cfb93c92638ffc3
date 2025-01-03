@@ -1,0 +1,17 @@
+package com.java8;
+
+interface interf{
+	void M1();
+	default void M2() {
+		System.out.println("inside interf method");
+	}
+	
+	static void M3() {
+		System.out.println("static meth insio");
+	}
+}
+public class InterfDefaStati implements interf{
+	void M1();
+	
+
+}

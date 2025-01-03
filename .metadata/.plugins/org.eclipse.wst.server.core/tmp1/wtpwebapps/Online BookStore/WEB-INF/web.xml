@@ -4,30 +4,31 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
 	id="WebApp_ID" version="4.0">
 	<display-name>Online BookStore</display-name>
+	
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+	<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
 
 	<servlet>
-		<servlet-name>jlcBookServlet</servlet-name>
-		<servlet-class>com.jlc.cook.chop.servlet.JLCBookShopServlet</servlet-class>
+		<servlet-name>libBookServlet</servlet-name>
+		<servlet-class>com.lib.book.shop.servlet.LibBookShopServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>jlcBookServlet</servlet-name>
-		<url-pattern>*.jlc</url-pattern>
+		<servlet-name>libBookServlet</servlet-name>
+		<url-pattern>*.lib</url-pattern>
 	</servlet-mapping>
 
 <!-- 	<listener>
-		<listener-class>com.jlc.book.shop.listener.JlcindiaContextListner</listener-class>
+		<listener-class>com.lib.book.shop.listener.libindiaContextListner</listener-class>
 	</listener> -->
 
 <!-- 	<filter>
 		<filter-name>sessionFilter</filter-name>
-		<filter-class>com.jlc.book.shop.filter.SessionValidatorFilter</filter-class>
+		<filter-class>com.lib.book.shop.filter.SessionValidatorFilter</filter-class>
 	</filter>
 
 	<filter-mapping>
 		<filter-name>sessionfilter</filter-name>
-		<url-pattern>*.jlc</url-pattern>
+		<url-pattern>*.lib</url-pattern>
 	</filter-mapping> -->
 </web-app>

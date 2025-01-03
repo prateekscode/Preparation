@@ -1,0 +1,83 @@
+package com.lib.book.shop.dao.impl;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.List;
+
+import org.apache.log4j.Logger;
+
+import com.lib.book.shop.dao.OrderDAO;
+import com.lib.book.shop.to.OrderTO;
+import com.lib.book.shop.to.UserTO;
+import com.lib.book.shop.util.JDBCUtil;
+
+public class JDBCOrderDAO implements OrderDAO {
+
+	Logger log=Logger.getLogger(this.getClass());
+	
+	@Override
+	public String placeOrder(OrderTO oto, String ip) {
+		String orderId = null;
+		Connection con = null;
+		PreparedStatement ps = null;
+
+		try {
+			con = JDBCUtil.getConnection();
+			ps = con.prepareStatement(
+					"inser into order_table values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			orderId 
+			ps.setString(1, username);
+			ps.setString(2, password);
+			rs = ps.executeQuery();
+			if (rs.next()) {
+				if (password.equals(rs.getString("password"))) {
+					String uid = rs.getString("userId");
+					String fName = rs.getString("firstName");
+					String mName = rs.getString("middleName");
+					String lName = rs.getString("lastName");
+					String eml = rs.getString("email");
+					long phn = rs.getLong("phone");
+					String logId = rs.getString("loginId");
+					String unm = rs.getString("username");
+					String pwd = rs.getString("password");
+					String role = rs.getString("role");
+					uto = new UserTO(fName, mName, lName, eml, phn, unm, pwd, role);
+					uto.setUserId(uid);
+					uto.setLoginId(logId);
+				}
+			}
+		} catch (Exception e) {
+			uto = null;
+			log.error("Exception in verifyUser :\n", e);
+		} finally {
+			JDBCUtil.close(rs, ps, con);
+		}
+		return uto;
+	}
+
+	@Override
+	public List getOrderByUserId(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List getAllOrderInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateStatus(String orderId, String status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public OrderTO getOrderByOrderId(String orderId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

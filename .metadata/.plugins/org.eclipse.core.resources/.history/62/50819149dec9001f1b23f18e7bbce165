@@ -1,0 +1,57 @@
+package com.lib.book.shop.action;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.lib.book.shop.delegate.OrderDelegate;
+import com.lib.book.shop.delegate.UserDelegate;
+import com.lib.book.shop.to.UserTO;
+import com.lib.book.shop.validator.LibDataValidtor;
+
+public class UpdateInfoAction {
+	public String updateUserInfo(HttpServletRequest req, HttpServletResponse res) {
+		boolean isError=false;
+		String page = "detailsDef.jsp";
+		String email = req.getParameter("email");
+		String phone = req.getParameter("phone");
+		req.setAttribute("EMAIL", email);
+		req.setAttribute("Phone", phone);
+		
+		/*Validating Email*/
+				if (!LibDataValidtor.validateRequired(email)) {
+					req.setAttribute("email", "Email is required");
+					isError = true;
+				} else if (!LibDataValidtor.maxLength(email, 32)) {
+					req.setAttribute("email", "Email must be maximum 32 character");
+					isError = true;
+				}else if (!LibDataValidtor.validateEmail(email)) {
+					req.setAttribute("email", "Please enter valid email id");
+					isError = true;
+				}
+
+				// Validated phone
+				if (!LibDataValidtor.validateRequired(currpass)) {
+					req.setAttribute("currpass", "Current Password is required");
+					intractWithDB = false;
+					compareEquals = false;
+				}
+
+				// Validated confirm password
+				if (!LibDataValidtor.validateRequired(confpass)) {
+					req.setAttribute("confpass", "Confirm Password is required");
+					intractWithDB = false;
+					compareEquals = false;
+				} else if (!LibDataValidtor.minLength(confpass, 3)) {
+					req.setAttribute("confpass", "Confirm Password must be minimum 3 character");
+					intractWithDB = false;
+					compareEquals = false;
+				} else if (!LibDataValidtor.maxLength(confpass, 15)) {
+					req.setAttribute("confpass", "Confirm Password must be maximum 15 character");
+					intractWithDB = false;
+					compareEquals = false;
+				}
+
+		return page;
+}

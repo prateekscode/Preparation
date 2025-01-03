@@ -1,17 +1,11 @@
 INDEX VERSION 1.134
-D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3863674915.index
-\Log4J\src
-D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3149472207.index
-\JSP-JSTL EX\src\main\java
 D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3401094729.index
 \Online BookStore\src\main\java
 D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3998129905.index
 \ServletEx-ReqDispatch\src\main\java
-D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2089115280.index
-\MVCEx\src\main\java
 D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1083768181.index
 \JSP-Proj-1\src\main\java
 D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1630972092.index
 \Test55\src\main\java
-D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\318940913.index
-\JSP-Proj-2\src\main\java
+D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3487547919.index
+\Online BookStore\src\main\java

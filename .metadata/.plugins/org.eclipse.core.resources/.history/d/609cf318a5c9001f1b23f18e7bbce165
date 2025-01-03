@@ -1,0 +1,43 @@
+package com.lib.book.shop.dao.impl;
+
+import java.util.List;
+
+import org.apache.log4j.Logger;
+
+import com.lib.book.shop.dao.OrderDAO;
+import com.lib.book.shop.to.OrderTO;
+
+public class JDBCOrderDAO implements OrderDAO {
+
+	Logger log=
+	@Override
+	public String placeOrder(OrderTO oto, String ip) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List getOrderByUserId(String userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List getAllOrderInfo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void updateStatus(String orderId, String status) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public OrderTO getOrderByOrderId(String orderId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -14,16 +14,14 @@ public class UserTO implements Serializable {
 	private String password;
 	private String role;
 
-	public UserTO(String userId, String firstName, String middleName, String lastName, String email, long phone,
-			String loginId, String username, String password, String role) {
+	public UserTO(String firstName, String middleName, String lastName, String email, long phone, String username,
+			String password, String role) {
 		super();
-		this.userId = userId;
 		this.firstName = firstName;
 		this.middleName = middleName;
 		this.lastName = lastName;
 		this.email = email;
 		this.phone = phone;
-		this.loginId = loginId;
 		this.username = username;
 		this.password = password;
 		this.role = role;

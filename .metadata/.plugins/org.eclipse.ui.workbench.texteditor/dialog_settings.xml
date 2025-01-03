@@ -6,14 +6,18 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="lib"/>
+		<item key="selection" value="intractWithDB"/>
 		<list key="findhistory">
+			<item value="bookList"/>
+			<item value="isError"/>
 			<item value="jlc"/>
+			<item value="lib"/>
 			<item value="Prog1"/>
 			<item value="innerclass"/>
 			<item value="package com.prepare;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="intractWithDB"/>
 			<item value="lib"/>
 			<item value="Lib"/>
 			<item value="Prog2"/>

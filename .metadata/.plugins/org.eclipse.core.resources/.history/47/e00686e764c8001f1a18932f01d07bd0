@@ -1,0 +1,7 @@
+package com.lib.book.shop.dao.impl;
+
+import com.lib.book.shop.dao.OrderDAO;
+
+public class JDBCOrderDAO implements OrderDAO {
+
+}

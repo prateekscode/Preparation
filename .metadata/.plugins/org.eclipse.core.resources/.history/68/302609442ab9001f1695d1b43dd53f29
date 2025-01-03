@@ -1,5 +1,0 @@
-package com.lib.book.store.shop.factory;
-
-public class DAOFactory {
-
-}

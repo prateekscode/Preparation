@@ -1,0 +1,11 @@
+package com.lib.book.shop.delegate;
+
+import com.lib.book.shop.dao.OrderDAO;
+import com.lib.book.shop.factory.DAOFactory;
+
+public class OrderDelegate {
+	private static OrderDAO orderDAO =null;
+	static {
+		orderDAO =DAOFactory.ge
+	}
+}

@@ -1,0 +1,9 @@
+package com.lib.book.shop.tags;
+
+import javax.servlet.jsp.tagext.TagSupport;
+
+import org.apache.log4j.Logger;
+
+public class RemoveSearchInfoFromSessionTag extends TagSupport{
+Logger logger=Logger.getLogger(this.getClass())g
+}

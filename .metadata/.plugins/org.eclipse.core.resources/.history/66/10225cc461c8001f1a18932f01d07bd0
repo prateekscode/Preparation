@@ -1,0 +1,25 @@
+package com.lib.book.shop.factory;
+
+import com.lib.book.shop.dao.BookDAO;
+import com.lib.book.shop.dao.UserDao;
+import com.lib.book.shop.dao.impl.JDBCBookDAO;
+import com.lib.book.shop.dao.impl.JDBCUserDAO;
+
+public class DAOFactory {
+	private static UserDao userDao = null;
+	private static BookDao bookDao = null;
+
+	static {
+		userDao = new JDBCUserDAO();
+		bookDao = new JDBCBookDAO();
+	}
+
+	public static UserDao getUserDao() {
+		return userDao;
+	}
+
+	public static BookDao getUserDao() {
+		return userDao;
+	}
+
+}

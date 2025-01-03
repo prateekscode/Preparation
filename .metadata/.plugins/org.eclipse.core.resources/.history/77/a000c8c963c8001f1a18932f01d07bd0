@@ -1,0 +1,22 @@
+package com.lib.book.shop.to;
+
+import java.util.Set;
+
+public class OrderTO {
+String orderId;
+String address;
+String street;
+String city;
+String state;
+String country;
+String zip;
+String cardNo;
+String expDate;
+float totalAmount;
+int totalItem;
+String userId;
+String orderDate;
+int orderItemId;
+Set orderItemList;
+String status;
+}

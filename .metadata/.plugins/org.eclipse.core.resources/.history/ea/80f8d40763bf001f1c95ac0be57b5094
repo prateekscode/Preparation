@@ -1,7 +1,0 @@
-package com.lib.book.shop.util;
-
-import org.apache.log4j.Logger;
-
-public class JDBCUtil {
-	static Logger log=Logger.getLogger(JDBCUtil.class);
-}

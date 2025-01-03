@@ -1,0 +1,16 @@
+package com.java8;
+
+@FunctionalInterface
+interface Addition{
+	static void add();
+}
+class LamdaExp implements Addition{
+@Override
+public void add() {
+System.out.println(5+1);
+}
+
+public static void main(String[] args) {
+	Addition.add();
+}
+}

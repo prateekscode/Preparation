@@ -1,5 +1,0 @@
-package com.lib.book.shop.dao;
-
-public interface UserDao {
-
-}

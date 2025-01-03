@@ -1,0 +1,10 @@
+package com.java8;
+
+@FunctionalInterface
+interface Addition{
+	void add();
+}
+@FunctionalInterface
+public interface LamdaExp extends Addition{
+	void addi();
+}

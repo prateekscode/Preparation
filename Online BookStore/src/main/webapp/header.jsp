@@ -1,7 +1,7 @@
 <html>
 <body>
 <center>
-<img alt="[Welcome To Book Store]" src="/images/JLCHeader.jpg">
+<img alt="" src="WEB-INF/image/book.jpeg">
 </center>
 </body>
 </html>

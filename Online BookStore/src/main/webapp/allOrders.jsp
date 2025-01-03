@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@taglib prefix="jlc" uri="/WEB-INF/tlds/Libindia.tld"%>
+<%@taglib prefix="lib" uri="/WEB-INF/tlds/Libindia.tld"%>
 <%@taglib prefix="core" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <link rel="stylesheet" type="text/css"
-	href="<%=request.getContextPath()%>/css/jlcindia.css">
+	href="<%=request.getContextPath()%>/css/libindia.css">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
@@ -58,14 +58,14 @@
 					%>
 					<tr bgcolor="<%=color%>">
 						<td align="center">
-							<form action="showorderinfo.jlc" method="post">
+							<form action="showorderinfo.lib" method="post">
 								<input type="hidden" value="${oto.orderId}" name="orderID" /> <input
 									type="hidden" value="allOrdersDef.jsp" name="page" /> <input
 									type="submit" value="${oto.orderId}" name="tableButton" />
 							</form>
 						</td>
 						<td align="center"><font size="3"><b>${oto.orderDate}</b></font></td>
-						<td align="center"><form action="showuserinfo.jlc"
+						<td align="center"><form action="showuserinfo.lib"
 								method="post">
 								<input type="hidden" value="${oto.userId}" name="userID" /> <input
 									type="submit" value="${oto.userId}" name="tableButton" />
@@ -76,12 +76,12 @@
 						</td>
 						<core:if test="${oto.status ne 'Delivered'}">
 							<td align="center">
-								<form action="updatestatus.jlc" method="post">
+								<form action="updatestatus.lib" method="post">
 									<input type="hidden" value="${oto.orderId}" name="orderID" />
 									<input type="hidden" value="Delivered" name="status" /> <input
 										type="submit" value="Delivered" name="tableButton" />
 								</form>
-								<form action="updatestatus.jlc" method="post">
+								<form action="updatestatus.lib" method="post">
 									<input type="hidden" value="${oto.orderId}" name="orderID" />
 									<input type="hidden" value="Not Delivered" name="status" /> <input
 										type="submit" value="Not Delivered" name="tableButton" />
@@ -172,7 +172,7 @@
 						<td align="center"><font size="3"><b>${bto.selectedNumberOfBook}</b></font>
 						</td>
 						<td align="right"><font size="4" face="Rupee Foradian"></font>
-							<font size="4"> <jlc:displayBookTotalAmount
+							<font size="4"> <lib:displayBookTotalAmount
 									value="${bto.cost*bto.selectedNumberOfBook}"
 									quantity="${bto.selectedNumberOfBook}" />
 						</font></td>

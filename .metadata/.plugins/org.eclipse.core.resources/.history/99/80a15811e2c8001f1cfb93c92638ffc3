@@ -1,0 +1,28 @@
+package com.java8;
+
+@FunctionalInterface
+interface Addition{
+	void add();
+}
+
+interface Multiply{
+	int mul(int n1,int n2);
+}
+
+class LamdaExp implements Addition{
+@Override
+public void add() {
+System.out.println(5+1);
+}
+
+public static void main(String[] args) {
+	//Normally
+	Addition a=new LamdaExp();
+	a.add();
+	
+	//using lambda exp
+	Addition a1=()->System.out.println(9+1);
+	a1.add();
+}
+
+}

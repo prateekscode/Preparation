@@ -1,0 +1,5 @@
+package com.lib.book.shop.action;
+
+public class ChangePasswordAction {
+	
+}

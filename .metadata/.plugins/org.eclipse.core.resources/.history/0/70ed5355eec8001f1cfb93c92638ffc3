@@ -1,0 +1,11 @@
+package com.java8;
+
+public class ThreadClsEx {
+	public static void main(String[] args) {
+		Runnable r = () -> {
+			System.out.println("ABC");
+			System.out.println(9 * 7);
+		};
+	}
+
+}

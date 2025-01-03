@@ -1,0 +1,10 @@
+package com.java8;
+
+interface Addition {
+	add();
+}
+public class LamdaExp {
+	public static void main(String[] args) {
+
+	}
+}
