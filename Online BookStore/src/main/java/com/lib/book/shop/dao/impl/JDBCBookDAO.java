@@ -212,7 +212,7 @@ public class JDBCBookDAO implements BookDAO {
 		String qry = "select * from book_table";
 		boolean whereAdded = false;
 		if (bto.getBookName() != null && bto.getBookName().length() != 0) {
-			qry += "where bookName like ?";
+			qry += " where bookName like ?";
 			whereAdded = true;
 		}
 		if (bto.getCost() != 0) {

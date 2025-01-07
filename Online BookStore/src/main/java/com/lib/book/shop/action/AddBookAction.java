@@ -74,10 +74,15 @@ public class AddBookAction {
 		if (intractWithDB) {
 			BookTO bto = new BookTO(bnm, author, pub, edi, bcost);
 			if (BookDelegate.alreadyExist(bto)) {
-				req.setAttribute("addingBookError", "Book information added successfully");
-				req.setAttribute("SHOW_ADD_BOOK", "OK");
+				req.setAttribute("addingBookError", "Book information already available.");
 			} else {
-				req.setAttribute("addingBookError", "Error in adding book information");
+				boolean added=BookDelegate.addBook(bto);
+				if(added) {
+					req.setAttribute("addingBookError", "Book Information added successfully");
+					req.setAttribute("SHOW_ADD_BOOK", "OK");	
+				} else {
+					req.setAttribute("addingBookError", "error in adding Book Information");
+				}
 			}
 		}
 		return page;

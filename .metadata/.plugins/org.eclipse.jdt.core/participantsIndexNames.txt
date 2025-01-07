@@ -7,5 +7,3 @@ D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\108
 \JSP-Proj-1\src\main\java
 D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1630972092.index
 \Test55\src\main\java
-D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3487547919.index
-\Online BookStore\src\main\java

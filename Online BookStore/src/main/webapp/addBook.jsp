@@ -30,11 +30,12 @@
 						<td><font size="4" color="red"><b><lib:error
 										property="bname" /></b></font></td>
 					</tr>
+					<tr>
 					<td align="left" height=""><font size="5"><b>Author</b></font>
 					</td>
 					<td><input type="text" size="35"
 						style="color: black; background-color: #b4e0d2; font-size: 20"
-						;name="author"></td>
+						name="author"></td>
 					<td><font size="4" color="red"><b><lib:error
 									property="author" /></b></font></td>
 					</tr>
@@ -62,11 +63,12 @@
 						<td><select
 							style="color: black; background-color: #b4e0d2; font-size: 20"
 							name="edition">
-								<option value="1st Edition"></option>
-								<option value="2nd Edition"></option>
-								<option value="3rd Edition"></option>
-								<option value="4th Edition"></option>
+								<option value="1st Edition">1st Edition</option>
+								<option value="2nd Edition">2nd Edition</option>
+								<option value="3rd Edition">3rd Edition</option>
+								<option value="4th Edition">4th Edition</option>
 						</select></td>
+
 						<td></td>
 					</tr>
 					<tr>

@@ -19,7 +19,8 @@
 	</tag>
 	<tag>
 		<name>removeSearchInfoFromSessionTag</name>
-		<tag-class>com.lib.book.shop.tags.RemoveSearchInfoFromSessionTag</tag-class>
+		<tag-class>com.lib.book.shop.tags.RemoveSearchInfoFromSessionTag
+		</tag-class>
 		<body-content>empty</body-content>
 	</tag>
 
@@ -29,24 +30,24 @@
 		<tag-class>com.lib.book.shop.tags.DisplayUserPasswordTag</tag-class>
 		<body-content>empty</body-content>
 	</tag>
-<!-- 	<tag>
-		<name>showSortField</name>
-		<tag-class>com.lib.book.shop.tags.ShowSortFieldTag</tag-class>
-		<body-content>empty</body-content>
-	</tag>
-	<tag>
-		<name>showSortOrder</name>
-		<tag-class>com.lib.book.shop.tags.ShowSortOrderTag</tag-class>
-		<body-content>empty</body-content>
-	</tag>
 	<tag>
 		<name>showEdition</name>
 		<tag-class>com.lib.book.shop.tags.ShowEditionTag</tag-class>
 		<body-content>empty</body-content>
 	</tag>
 	<tag>
+		<name>showSortField</name>
+		<tag-class>com.lib.book.shop.tags.ShowSortFieldTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
+		<name>showSortOrder</name>
+		<tag-class>com.lib.book.shop.tags.ShowSortFieldTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	<tag>
 		<name>displayBookTotalAmount</name>
-		<tag-class>com.lib.book.shop.tags.DisplayBookTotalAmountTag
+		<tag-class>com.lib.book.shop.tags.BookAmountTag
 		</tag-class>
 		<body-content>empty</body-content>
 		<attribute>
@@ -65,5 +66,5 @@
 		<tag-class>com.lib.book.shop.tags.TotalAmountTag
 		</tag-class>
 		<body-content>empty</body-content>
-	</tag> -->
+	</tag>
 </taglib>

@@ -1,7 +1,7 @@
 <html>
 <body>
 <center>
-<img alt="" src="WEB-INF/image/book.jpeg">
+<img alt="Logo Image" src="images/header.jpg">
 </center>
 </body>
 </html>

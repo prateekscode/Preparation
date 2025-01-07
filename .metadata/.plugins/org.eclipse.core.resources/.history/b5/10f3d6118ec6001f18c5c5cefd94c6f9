@@ -1,7 +1,0 @@
-package com.lib.book.shop.tags;
-
-import org.apache.log4j.Logger;
-
-public class ValidateSessionTag {
-Logger log=Logger.getLogger(this.getClass());
-}
