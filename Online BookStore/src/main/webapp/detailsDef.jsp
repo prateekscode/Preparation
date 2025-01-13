@@ -26,7 +26,7 @@
 			</td>
 		</tr>
 		<tr valign="top">
-			<td align="center"><jsp:include page="/allOrders.jsp"></jsp:include>
+			<td align="center"><jsp:include page="/details.jsp"></jsp:include>
 			</td>
 		</tr>
 		<tr valign="bottom" height="2px">

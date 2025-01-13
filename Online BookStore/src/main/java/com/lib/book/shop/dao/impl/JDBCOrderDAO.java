@@ -14,7 +14,6 @@ import org.apache.log4j.Logger;
 import com.lib.book.shop.dao.OrderDAO;
 import com.lib.book.shop.to.BookTO;
 import com.lib.book.shop.to.OrderTO;
-import com.lib.book.shop.to.UserTO;
 import com.lib.book.shop.util.JDBCUtil;
 
 public class JDBCOrderDAO implements OrderDAO {
@@ -29,6 +28,7 @@ public class JDBCOrderDAO implements OrderDAO {
 
 		try {
 			con = JDBCUtil.getConnection();
+			con.setAutoCommit(false);
 			st = con.prepareStatement("insert into order_table values(?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 			orderId = getOrderId(oto.getOrderDate(), ip);
 			st.setString(1, orderId);
@@ -84,9 +84,9 @@ public class JDBCOrderDAO implements OrderDAO {
 
 		try {
 			con = JDBCUtil.getConnection();
-			st = con.prepareStatement("select * from order_table whwere userId=?");
+			st = con.prepareStatement("select * from order_table where userId=?");
 			st.setString(1, userId);
-			;
+			rs=st.executeQuery();
 			if (rs.next()) {
 				orderList = new ArrayList();
 				do {
@@ -235,8 +235,8 @@ public class JDBCOrderDAO implements OrderDAO {
 		String mm = cal.get(Calendar.MINUTE) + "";
 		String ss = cal.get(Calendar.SECOND) + "";
 		String dt = str[0] + str[1] + str[2];
-		String time = "hh+mm+ss";
-		String ips[] = ip.split("\\.");
+		String time = hh+mm+ss;
+		String ips[] = ip.split("\\:");
 		ip = ips[0] + ips[1] + ips[2] + ips[3];
 		String hexDate = Long.toHexString(Long.parseLong(dt));
 		String hexTime = Long.toHexString(Long.parseLong(time));

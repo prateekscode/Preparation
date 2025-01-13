@@ -1,0 +1,15 @@
+package com.java8;
+
+interface In{
+	public void m1(int i);
+}
+
+public class MethRefrncInst {
+	public void m2(int i) {
+		System.out.println("From method ref: "+i);
+	}
+	public static void main(String[] args) {
+		In f=i->System.out.println("From lambda: "+i);
+		f.m1(11);
+	}
+}

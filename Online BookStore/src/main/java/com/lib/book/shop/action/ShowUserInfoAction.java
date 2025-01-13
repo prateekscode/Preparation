@@ -12,7 +12,7 @@ import com.lib.book.shop.to.UserTO;
 public class ShowUserInfoAction {
 	public String getUserInfo(HttpServletRequest req, HttpServletResponse res) {
 		String page = "allOrdersDef.jsp";
-		String userId = req.getParameter("userId");
+		String userId = req.getParameter("userID");
 		UserTO uto = UserDelegate.getUserInfoById(userId);
 		req.setAttribute("USER_INFO", uto);
 		List orderList = null;

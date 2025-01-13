@@ -28,7 +28,7 @@
 				</core:if>
 				<tr bgcolor="#fdeaff">
 					<td><font size="3"><b>Name</b></font></td>
-					<td colspan="2"><font size="3"><b>${USER_TO.lastName}</b></font>
+					<td colspan="2"><font size="3"><b>${USER_TO.firstName} ${USER_TO.middleName} ${USER_TO.lastName}</b></font>
 					</td>
 				</tr>
 				<tr bgcolor="#dee1fe">

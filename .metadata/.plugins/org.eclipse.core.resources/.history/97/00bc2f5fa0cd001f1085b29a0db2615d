@@ -1,0 +1,29 @@
+package com.java8;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.function.Predicate;
+
+public class Prdecate {
+
+	public static void main(String[] args) {
+		int[] x= {0,24,45,67,88,9,87,67,55,43};
+		
+		Predicate<Integer> p=I->I>10;
+		System.out.println(p.test(5));
+		System.out.println(p.test(20));
+		
+		System.out.println("---------------------");
+		Predicate<String> p1=s->s.length()>7;
+		System.out.println(p1.test("ARAMBH"));
+		System.out.println(p1.test("TERMINATOR"));
+		
+		System.out.println("''''''''''''''''''''''");
+		List<Integer> l=new ArrayList<Integer>();
+		l.add(55);
+		Predicate<Collection> p2=t->t.isEmpty();
+		System.out.println(p2.test(l));
+		
+	}
+}

@@ -1,0 +1,34 @@
+package com.java8_1.streamspack;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class Cd6 {
+	public static void main(String[] args) {
+		List<Integer> al = new ArrayList<Integer>();
+		al.add(15);
+		al.add(44);
+		al.add(32);
+		al.add(51);
+		
+		List<Integer> collect = al.stream().filter(n->n>30).collect(Collectors.toList());
+		collect.forEach(x->System.out.println(x));
+		
+		//stream for each and sorted
+		Stream<Integer> collect1 = al.stream().filter(n->n>30).sorted();
+		collect1.forEach(x->System.out.println("^^^^^^"+x));
+		
+		
+		long n=al.stream().count();
+		System.out.println("----"+n);
+		
+		Stream<Integer> sorted = al.stream().sorted();
+		sorted.forEach(x->System.out.println("Sorted order "+x));
+		
+		Stream<Integer> sorted1 = al.stream().sorted((i1,i2)->i2.compareTo(i1));
+		sorted1.forEach(x->System.out.println("Desc Sorted order "+x));
+		
+	}
+}

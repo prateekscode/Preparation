@@ -17,8 +17,8 @@
 	<center>
 		<table class="textStyle" width="95%">
 			<tr>
-				<td><font color="yellow"><b>Welcome &nbsp;<font
-							color="white"> ${USER_TO.firstName} &nbsp;
+				<td><font color="green"><b>Welcome &nbsp;<font
+							color="red"> ${USER_TO.firstName} &nbsp;
 								${USER_TO.middleName} &nbsp; ${USER_TO.lastName} </font>[${USER_TO.role}]
 					</b></font></td>
 				<td><a href="userHomeDef.jsp">Home</a></td>

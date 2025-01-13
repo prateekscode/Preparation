@@ -1,0 +1,13 @@
+package com.java8;
+
+import java.util.function.Predicate;
+
+public class Prdecate {
+
+	public static void main(String[] args) {
+		int[] x= {0,24,45,67,88,9,87,67,55,43};
+		
+		Predicate<Integer> p=I->I>10;
+		System.out.println(p.test(5));
+	}
+}

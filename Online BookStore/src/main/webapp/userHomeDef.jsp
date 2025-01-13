@@ -19,10 +19,15 @@ href="<%=request.getContextPath()%>/css/indexstyle.css">
 <jsp:include page="/header.jsp"></jsp:include>
 </td>
 </tr>
-<tr valign="top" bgcolor="maroon" height="3px">
+<tr valign="top" bgcolor="orange" height="3px">
 <td align="center">
-<jsp:include page="userMenu.jsp"></jsp:include>
+<jsp:include page="/userMenu.jsp"></jsp:include>
 </td>
+<tr valign="middle">
+<td align="center">
+<jsp:include page="/userHome.jsp"></jsp:include>
+</td>
+</tr>
 </table>
 </body>
 </html>

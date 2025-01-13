@@ -10,7 +10,7 @@ import com.lib.book.shop.delegate.OrderDelegate;
 public class UpdateOrderStatusAction {
 	public String updateOrderStatus(HttpServletRequest req, HttpServletResponse res) {
 		String page = "allOrdersDef.jsp";
-		String orderId = req.getParameter("orderId");
+		String orderId = req.getParameter("orderID");
 		String status = req.getParameter("status");
 		OrderDelegate.updateStatus(orderId, status);
 		List orderList = OrderDelegate.getAllOrderInfo();
