@@ -1,6 +1,10 @@
 INDEX VERSION 1.134
+D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\848539448.index
+\JavaApp\src\main\resources
 D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3401094729.index
 \Online BookStore\src\main\java
+D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\385013172.index
+\javaapp\src\main\resources
 D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3998129905.index
 \ServletEx-ReqDispatch\src\main\java
 D:\PRATEEK\Preparation\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1083768181.index

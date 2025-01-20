@@ -24,7 +24,7 @@
 			<td align="center"><jsp:include page="/header.jsp"></jsp:include>
 			</td>
 		</tr>
-		<tr valign="top" bgcolor="maroon" height="3px">
+		<tr valign="top" bgcolor="orange" height="3px">
 			<td align="center"><jsp:include page="/userMenu.jsp"></jsp:include>
 			</td>
 		</tr>

@@ -6,7 +6,8 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.PageContext;
 import javax.servlet.jsp.tagext.TagSupport;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.lib.book.shop.util.DoubleFormator;
 
@@ -14,7 +15,7 @@ public class BookAmountTag extends TagSupport {
 	private String value;
 	private String quantity;
 
-	Logger log = Logger.getLogger(this.getClass());
+	Logger log = LogManager.getLogger(this.getClass());
 
 	public String getValue() {
 		return value;

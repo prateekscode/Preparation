@@ -1,8 +1,0 @@
-package com.java8;
-
-interface In{
-	public void m1(int i);
-}
-public class MethRefrncInst {
-	
-}

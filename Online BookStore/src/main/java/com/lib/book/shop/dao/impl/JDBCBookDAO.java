@@ -6,16 +6,16 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.lib.book.shop.dao.BookDAO;
 import com.lib.book.shop.to.BookTO;
-import com.lib.book.shop.to.UserTO;
 import com.lib.book.shop.util.JDBCUtil;
 
 public class JDBCBookDAO implements BookDAO {
 
-	Logger log = Logger.getLogger(this.getClass());
+	Logger log = LogManager.getLogger(this.getClass());
 
 	@Override
 	public boolean addBook(BookTO bto) {

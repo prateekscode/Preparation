@@ -1,17 +1,15 @@
 package com.lib.book.shop.tags;
 
-import java.io.Writer;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.JspException;
-import javax.servlet.jsp.PageContext;
-
-import org.apache.log4j.Logger;
 import javax.servlet.jsp.tagext.TagSupport;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 public class ValidateSessionTag extends TagSupport {
-	Logger log = Logger.getLogger(this.getClass());
+	Logger log = LogManager.getLogger(this.getClass());
 
 	public int doendTag() throws JspException {
 		try {

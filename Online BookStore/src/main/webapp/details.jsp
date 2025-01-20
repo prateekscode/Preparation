@@ -68,10 +68,10 @@
 								size="4"><b>Edit</b></font></a></td>
 					</core:if>
 					<core:if test="${EDIT_INFO ne null}">
-						<td align="center"><a href="canceledit.lib"> <font
+						<td align="center"><a href="cancleedit.lib"> <font
 								size="4"><b>Cancel</b></font></a></td>
-						<td align="center"><input type="submit" value="Update"
-							class="signoutButton"></td>
+						<td align="center"><a><input type="submit" value="Update"
+							class="signoutButton"></a></td>
 					</core:if>
 				</tr>
 			</table>

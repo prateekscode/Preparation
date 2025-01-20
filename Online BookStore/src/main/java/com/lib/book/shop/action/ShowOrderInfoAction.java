@@ -12,7 +12,7 @@ import com.lib.book.shop.to.UserTO;
 public class ShowOrderInfoAction {
 	public String getOrderInfo(HttpServletRequest req, HttpServletResponse res) {
 		String page = req.getParameter("page");
-		String orderId = req.getParameter("orderID");
+		String orderId = req.getParameter("orderId");
 		OrderTO oto = OrderDelegate.getOrderByOrderId(orderId);
 		req.setAttribute("ORDER_TO", oto);
 		List orderList = null;

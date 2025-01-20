@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\PRATEEK\Preparation"/>
+			<item value="D:\PRATEEK\Preparation\Preparation\src\com\java8_1\streamspack\Cd7.java"/>
 			<item value="D:\PRATEEK\Preparation\JSP-JSTL EX\src\main\webapp\show_users.jsp"/>
 			<item value="D:\PRATEEK\Preparation\JSP-JSTL EX"/>
 			<item value="D:\PRATEEK\Preparation\TestTest"/>
@@ -16,7 +18,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="All Catalogs"/>
+		<item key="catalog" value="internal"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -28,10 +30,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.deploy.manual.JavaApp"/>
+			<item value="com.deploy.manual.javaapp"/>
 		</list>
 		<list key="groupId">
+			<item value="com.deploy.manual"/>
 		</list>
 		<list key="artifactId">
+			<item value="JavaApp"/>
+			<item value="javaapp"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

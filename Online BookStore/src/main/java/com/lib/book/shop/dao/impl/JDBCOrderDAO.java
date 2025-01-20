@@ -9,7 +9,8 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import com.lib.book.shop.dao.OrderDAO;
 import com.lib.book.shop.to.BookTO;
@@ -18,7 +19,7 @@ import com.lib.book.shop.util.JDBCUtil;
 
 public class JDBCOrderDAO implements OrderDAO {
 
-	Logger log = Logger.getLogger(this.getClass());
+	Logger log = LogManager.getLogger(this.getClass());
 
 	@Override
 	public String placeOrder(OrderTO oto, String ip) {
@@ -161,7 +162,7 @@ public class JDBCOrderDAO implements OrderDAO {
 
 		try {
 			con = JDBCUtil.getConnection();
-			st = con.prepareStatement("update order_table set status=? where orderId-?");
+			st = con.prepareStatement("update order_table set status=? where orderId=?");
 			st.setString(1, status);
 			st.setString(2, orderId);
 			st.executeUpdate();

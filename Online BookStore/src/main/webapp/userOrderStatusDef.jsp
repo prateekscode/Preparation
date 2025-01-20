@@ -13,7 +13,7 @@
 <body bgcolor="#lightgray">
 	<lib:validateSession />
 	<lib:removeSearchInfoFromSessionTag />
-	<core:if test="${USER_TO.role ne 'Admin'}">
+	<core:if test="${USER_TO.role ne 'User'}">
 		<jsp:forward page="userHomeDef.jsp"></jsp:forward>
 	</core:if>
 	<table width="90%" align="center" height="97%">
@@ -21,7 +21,7 @@
 			<td align="center"><jsp:include page="/header.jsp"></jsp:include>
 			</td>
 		</tr>
-		<tr valign="top" bgcolor="maroon" height="3px">
+		<tr valign="top" bgcolor="orange" height="3px">
 			<td align="center"><jsp:include page="/userMenu.jsp"></jsp:include>
 			</td>
 		</tr>

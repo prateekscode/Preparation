@@ -19,6 +19,12 @@
 					<td align="center"><font color="black" size="5"><b>Order
 								Information not found</b></font></td>
 				</tr>
+			</core:if>
+			<core:if test="${ORDER_FOUND ne null}">
+				<tr bgcolor="orange">
+					<td align="center" colspan="6"><font color="black" size="5"><b>Order
+								Information</b></font></td>
+				</tr>
 				<tr bgcolor="black">
 					<td align="center"><font color="yellow" size="4"><b>Sr.No</b></font>
 					</td>
