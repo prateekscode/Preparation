@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.lib.book.shop.action.ShowUserInfoAction"/>
-    <fullyQualifiedTypeName name="javax.servlet.ServletRequest"/>
-    <fullyQualifiedTypeName name="javax.servlet.ServletResponse"/>
-    <fullyQualifiedTypeName name="javax.servlet.FilterChain"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-    <fullyQualifiedTypeName name="javax.servlet.FilterConfig"/>
-    <fullyQualifiedTypeName name="javax.servlet.ServletException"/>
-    <fullyQualifiedTypeName name="javax.servlet.ServletContextListener"/>
-    <fullyQualifiedTypeName name="javax.servlet.ServletContextEvent"/>
     <fullyQualifiedTypeName name="javax.servlet.ServletContext"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="org.apache.log4j.PropertyConfigurator"/>
@@ -53,11 +42,22 @@
     <fullyQualifiedTypeName name="com.designPatterns.SBlkEager"/>
     <fullyQualifiedTypeName name="com.designPatterns.LazIni"/>
     <fullyQualifiedTypeName name="com.designPatterns.ThreadSafeSing"/>
-    <fullyQualifiedTypeName name="java.lang.Runnable"/>
-    <fullyQualifiedTypeName name="java.lang.Thread"/>
     <fullyQualifiedTypeName name="com.designPatterns.ThreSaf"/>
     <fullyQualifiedTypeName name="com.designPatterns.ThreSaf1"/>
     <fullyQualifiedTypeName name="com.designPatterns.BillPughSing.InnerCls"/>
     <fullyQualifiedTypeName name="com.designPatterns.BillPughSing"/>
     <fullyQualifiedTypeName name="javax.swing.plaf.synth.SynthOptionPaneUI"/>
+    <fullyQualifiedTypeName name="com.ReflApi.EmpRef"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Parameter"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Annotation"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.RetentionPolicy"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Inherited"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Target"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.ElementType"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Documented"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

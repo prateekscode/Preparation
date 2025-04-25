@@ -48,7 +48,7 @@ public class TestPrototype {
 		List<String> list = empsNew.getEmpList();
 		list.add("John");
 		List<String> list1 = empsNew1.getEmpList();
-		list1.remove("Abhinay");
+		list1.remove("Abhinayf");
 
 		System.out.println("emps List: " + emps.getEmpList());
 		System.out.println("empsNew List: " + list);
